@@ -32,23 +32,23 @@ services:
     # environment:
     #   RAILS_ENV: "production"
 
-  # frontend:
-  #   build:
-  #     context: ./frontend
-  #     args:
-  #       WORKDIR:           $WORKDIR
-  #       HOST:              $HOST
-  #       FRONT_PORT:        $FRONTEND_PORT
-  #       BACKEND_BASE_URL:  $BACKEND_BASE_URL
-  #       BROWSER_BASE_URL:  $BROWSER_BASE_URL
-  #   command: npm start
-  #   volumes:
-  #     - ./frontend:/$WORKDIR
-  #     - frontend-node_modules:/app/node_modules
-  #   ports:
-  #     - "$FRONTEND_PORT:8080"
-  #   depends_on:
-  #     - backend
+  frontend:
+    build:
+      context: ./frontend
+      args:
+        WORKDIR:           $WORKDIR
+        HOST:              $HOST
+        FRONT_PORT:        $FRONTEND_PORT
+        BACKEND_BASE_URL:  $BACKEND_BASE_URL
+        BROWSER_BASE_URL:  $BROWSER_BASE_URL
+    command: npm run serve
+    volumes:
+      - ./frontend:/$WORKDIR
+      - frontend-node_modules:/app/node_modules
+    ports:
+      - "$FRONTEND_PORT:8080"
+    depends_on:
+      - backend
   #   # environment:
   #   #   NODE_ENV: "production"
 

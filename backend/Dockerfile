@@ -8,7 +8,7 @@ ARG DB_NAME
 ARG DB_USERNAME
 ARG DB_PASSWORD
 
-ENV RUNTIME_PACKAGES "linux-headers libxml2-dev make gcc libc-dev nodejs tzdata postgresql-dev postgresql git"
+ENV RUNTIME_PACKAGES "linux-headers libxml2-dev make gcc libc-dev nodejs tzdata postgresql-dev postgresql git less"
 ENV DEV_PACKAGES     "build-base curl-dev"
 ENV HOST             $HOST
 ENV PORT             $BACKEND_PORT
@@ -28,7 +28,6 @@ RUN apk update && \
     apk add --virtual build-dependencies --no-cache ${DEV_PACKAGES} && \
     bundle install -j4 && \
     apk del build-dependencies
-RUN apk add --update --no-cache less
 
 COPY . .
 
