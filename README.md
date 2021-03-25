@@ -1,2 +1,2 @@
 # ChatApp
-Vue.js + Node.js での開発練習用
+Vue3 + TypeScript + RailsAPI 環境での開発練習。
