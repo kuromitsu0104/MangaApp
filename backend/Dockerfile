@@ -8,7 +8,7 @@ ARG DB_NAME
 ARG DB_USERNAME
 ARG DB_PASSWORD
 
-ENV RUNTIME_PACKAGES "linux-headers libxml2-dev make gcc libc-dev nodejs tzdata postgresql-dev postgresql git less"
+ENV RUNTIME_PACKAGES "linux-headers libxml2-dev make gcc libc-dev nodejs tzdata postgresql-dev postgresql git less shared-mime-info"
 ENV DEV_PACKAGES     "build-base curl-dev"
 ENV HOST             $HOST
 ENV PORT             $BACKEND_PORT
