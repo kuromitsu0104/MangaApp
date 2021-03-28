@@ -1,6 +1,6 @@
 # ChatApp
 
-Vue3 + TypeScript + RailsAPI 環境での開発練習用
+Vue3 + TypeScript + TailwindCSS + RailsAPI 環境での開発練習用
 
 # Project setup
 
