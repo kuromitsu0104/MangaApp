@@ -1,24 +1,104 @@
 <template>
-  <div
-    class="py-8 px-8 max-w-sm mx-auto bg-white rounded-xl shadow-md space-y-2 sm:py-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-6"
+  <!-- animation -->
+  <section
+    class="p-10 min-h-screen flex md:flex-row items-center justify-around bg-red-500 flex-wrap sm:flex-col"
   >
-    <img
-      class="block mx-auto h-24 rounded-full sm:mx-0 sm:flex-shrink-0"
-      src="/img/erin-lindford.jpg"
-      alt="Woman's Face"
-    />
-    <div class="text-center space-y-2 sm:text-left">
-      <div class="space-y-0.5">
-        <p class="text-lg text-black font-semibold">Erin Lindford</p>
-        <p class="text-gray-500 font-medium">Product Engineer</p>
-      </div>
-      <button
-        class="px-4 py-1 text-sm text-purple-600 font-semibold rounded-full border border-purple-200 hover:text-white hover:bg-purple-600 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2"
+    <!-- scale -->
+    <div class="h-32 w-32 relative cursor-pointer mb-5">
+      <div
+        class="absolute inset-0 bg-white opacity-25 rounded-lg shadow-2xl"
+      ></div>
+      <div
+        class="absolute inset-0 transform hover:scale-75 transition duration-300"
       >
-        Message
-      </button>
+        <div class="h-full w-full bg-white rounded-lg shadow-2xl"></div>
+      </div>
     </div>
-  </div>
+
+    <!-- roatate and scale -->
+    <div class="h-32 w-32 relative cursor-pointer mb-5">
+      <div
+        class="absolute inset-0 bg-white opacity-25 rounded-lg shadow-2xl"
+      ></div>
+      <div
+        class="absolute inset-0 transform hover:rotate-90 hover:scale-75 transition duration-300"
+      >
+        <div class="h-full w-full bg-white rounded-lg shadow-2xl"></div>
+      </div>
+    </div>
+
+    <!-- rotate -->
+    <div class="h-32 w-32 relative cursor-pointer mb-5">
+      <div
+        class="absolute inset-0 bg-white opacity-25 rounded-lg shadow-2xl"
+      ></div>
+      <div
+        class="absolute inset-0 transform hover:rotate-45 transition duration-300"
+      >
+        <div class="h-full w-full bg-white rounded-lg shadow-2xl"></div>
+      </div>
+    </div>
+
+    <!-- rotate minus -->
+    <div class="h-32 w-32 relative cursor-pointer mb-5">
+      <div
+        class="absolute inset-0 bg-white opacity-25 rounded-lg shadow-2xl"
+      ></div>
+      <div
+        class="absolute inset-0 transform hover:-rotate-45 transition duration-300"
+      >
+        <div class="h-full w-full bg-white rounded-lg shadow-2xl"></div>
+      </div>
+    </div>
+
+    <!-- Origin -->
+    <div class="h-32 w-32 relative cursor-pointer mb-5">
+      <div
+        class="absolute inset-0 bg-white opacity-25 rounded-lg shadow-2xl"
+      ></div>
+      <div
+        class="absolute inset-0 transform origin-left hover:-rotate-45 transition duration-300"
+      >
+        <div class="h-full w-full bg-white rounded-lg shadow-2xl"></div>
+      </div>
+    </div>
+
+    <!-- translate -->
+    <div class="h-32 w-32 relative cursor-pointer mb-5">
+      <div
+        class="absolute inset-0 bg-white opacity-25 rounded-lg shadow-2xl"
+      ></div>
+      <div
+        class="absolute inset-0 transform hover:-translate-x-10 transition duration-300"
+      >
+        <div class="h-full w-full bg-white rounded-lg shadow-2xl"></div>
+      </div>
+    </div>
+
+    <div class="h-32 w-32 relative cursor-pointer mb-5">
+      <div
+        class="absolute inset-0 bg-white opacity-25 rounded-lg shadow-2xl"
+      ></div>
+
+      <div
+        class="absolute inset-0 transform hover:rotate-90 hover:translate-x-full hover:scale-150 transition duration-300"
+      >
+        <div class="h-full w-full bg-white rounded-lg shadow-2xl"></div>
+      </div>
+    </div>
+
+    <!-- skew -->
+    <div class="h-32 w-32 relative cursor-pointer mb-5">
+      <div
+        class="absolute inset-0 bg-white opacity-25 rounded-lg shadow-2xl"
+      ></div>
+      <div
+        class="absolute inset-0 transform hover:skew-y-12 transition duration-300"
+      >
+        <div class="h-full w-full bg-white rounded-lg shadow-2xl"></div>
+      </div>
+    </div>
+  </section>
 </template>
 <script lang="ts">
 import { defineComponent } from "vue";
