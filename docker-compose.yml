@@ -38,9 +38,10 @@ services:
       args:
         WORKDIR:           $WORKDIR
         HOST:              $HOST
-        FRONTEND_PORT:        $FRONTEND_PORT
+        FRONTEND_PORT:     $FRONTEND_PORT
         BACKEND_BASE_URL:  $BACKEND_BASE_URL
         BROWSER_BASE_URL:  $BROWSER_BASE_URL
+        QIITA_TOKEN:       $QIITA_TOKEN
     command: npm run serve
     volumes:
       - ./frontend:/$WORKDIR

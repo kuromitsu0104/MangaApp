@@ -1,17 +1,17 @@
 <template>
   <div class="header">
-    <header class="bg-teal-400">
+    <header class="bg-teal-400 w-full shadow-md">
       <nav class="flex justify-between w-full bg-green-500 text-white p-4">
         <router-link to="/" class="font-semibold text-xl tracking-tight"
           >MangaApp</router-link
         >
         <div class="md:items-center md:w-auto flex">
           <div class="md:flex hidden">
-            <router-link to="/about" class="md:text-white mr-4"
-              >About</router-link
+            <router-link to="/dashboard" class="md:text-white mr-4"
+              >Dashboard</router-link
             >
             <router-link to="/about" class="md:text-white mr-4"
-              >link2</router-link
+              >About</router-link
             >
             <router-link to="/about" class="md:text-white mr-4"
               >link3</router-link
