@@ -1,15 +1,16 @@
 <template>
   <div class="app">
-    <Header />
+    <sidebar />
     <router-view />
   </div>
 </template>
 <script lang="ts">
 import { defineComponent } from "vue";
-import Header from "@/components/organisms/Header.vue";
+import Sidebar from "@/components/organisms/Sidebar.vue";
+
 export default defineComponent({
   components: {
-    Header,
+    Sidebar,
   },
 });
 </script>
